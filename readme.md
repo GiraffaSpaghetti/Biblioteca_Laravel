@@ -1,4 +1,33 @@
 ## API Reference
+
+### Book
+#### Create a book
+create a new awesome book
+```http
+  POST http://127.0.0.1:8000/api/create-book
+``` 
+ Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `nome`| `string` | **Required**. Name of the book |
+`autor`| `string` | **Required**. First and lastname of the author |
+`ano`| `int` | **Required**. The year when the book was released |
+`status`| `int` | **Required**. Status of the book |
+`sinopse`| `int` | **Required**. The synopsis of the book|
+
+### Response 200:
+```Json
+{
+   "livro":{
+      "id":5,
+      "nome":"Berserk",
+      "autor":"Kentaro Miura",
+      "ano":1979,
+      "status":1,
+      "sinopse":"A Melhor obra do mundo inteiro apenas compre imediatamente agora pode clicar no botao de comprar to esperando..."
+   }
+}
+```
+
 ### List Books
 #### List all books
 List all awesome books
