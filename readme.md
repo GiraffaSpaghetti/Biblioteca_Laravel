@@ -1,7 +1,7 @@
 ## API Reference
 ### List Books
-#### List all book
-List all awesome book
+#### List all books
+List all awesome books
 ```http
   GET http://127.0.0.1:8000/api/list-book/
 ``` 
