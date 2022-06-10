@@ -11,8 +11,8 @@ create a new awesome book
 | `nome`| `string` | **Required**. Name of the book |
 `autor`| `string` | **Required**. First and lastname of the author |
 `ano`| `int` | **Required**. The year when the book was released |
-`status`| `int` | **Required**. Status of the book |
-`sinopse`| `int` | **Required**. The synopsis of the book|
+`status`| `bool` | **Required**. Status of the book |
+`sinopse`| `text` | **Required**. The synopsis of the book|
 
 ### Response 200:
 ```Json
